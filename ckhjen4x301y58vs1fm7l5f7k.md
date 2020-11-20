@@ -1,7 +1,5 @@
 ## Understanding inode in Linux systems
 
-Recently in the production environment, INODE_PARTITION_FULL event was raised by the monitoring system but the disk usage just around 30% 😕. 
-
 An inode is a file(everything in a Linux is a file!!!) which stores information on how and where data of a file is stored in blocks in the hard disk. If inode usage reaches 100%, no new files can be created in a server.
 
 Here is Wikipedia definition 
