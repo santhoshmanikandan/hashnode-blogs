@@ -1,4 +1,4 @@
-## So what's a dependency injection
+## So what's dependency injection?
 
 Consider this situation, a class named EmployeeList which reads a list of employee names from files
 
