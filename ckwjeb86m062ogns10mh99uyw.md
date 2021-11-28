@@ -42,7 +42,10 @@ Similar to any Java type, records come with some restrictions on their usage.
 - The components of a record are implicitly final.
 
 
-
+Further reading
+-  [JEP 395](https://openjdk.java.net/jeps/395)
+- [Records Come to Java](https://blogs.oracle.com/javamagazine/post/records-come-to-ja
+va)
 
 
 
