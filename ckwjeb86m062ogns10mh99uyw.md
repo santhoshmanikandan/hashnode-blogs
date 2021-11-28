@@ -11,11 +11,11 @@ Java language is known for being too much verbose which results in writing an am
 
 **RecordHeader:**
 
- `(` [RecordComponentList] `)`
+ ( [RecordComponentList] )
 
 **RecordComponentList:**
 
- RecordComponent { `,` RecordComponent}
+ RecordComponent { , RecordComponent}
 
 **RecordComponent:**
 
@@ -24,11 +24,11 @@ Java language is known for being too much verbose which results in writing an am
 
 **VariableArityRecordComponent:**
 
- {Annotation} UnannType {Annotation} `...` Identifier
+ {Annotation} UnannType {Annotation} ... Identifier
 
 **RecordBody:**
 
-  `{` {RecordBodyDeclaration} `}`
+  { {RecordBodyDeclaration} }
 
 **RecordBodyDeclaration:**
 
