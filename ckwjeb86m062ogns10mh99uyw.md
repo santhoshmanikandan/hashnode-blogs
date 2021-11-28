@@ -2,10 +2,42 @@
 
 Java language is known for being too much verbose which results in writing an ample number of lines to store immutable data fetched from a database or URL connection for processing. Java records(first introduced in J14 and finalized in J16) provide an easier way to declare data carriers.
 
-Basic syntax of a record is: 
+### Java Grammer
 
-> {ClassModifier} `record` TypeIdentifier [TypeParameters]
+**RecordDeclaration:**
+
+  {ClassModifier} `record` TypeIdentifier [TypeParameters]
     RecordHeader [SuperInterfaces] RecordBody
+
+**RecordHeader:**
+
+ `(` [RecordComponentList] `)`
+
+**RecordComponentList:**
+
+ RecordComponent { `,` RecordComponent}
+
+**RecordComponent:**
+
+ {Annotation} UnannType Identifier
+ VariableArityRecordComponent
+
+**VariableArityRecordComponent:**
+
+ {Annotation} UnannType {Annotation} `...` Identifier
+
+**RecordBody:**
+
+  `{` {RecordBodyDeclaration} `}`
+
+**RecordBodyDeclaration:**
+
+  ClassBodyDeclaration
+  CompactConstructorDeclaration
+
+**CompactConstructorDeclaration**:
+
+  {ConstructorModifier} SimpleTypeName ConstructorBody
 
 Java record is nothing but a special class that the compiler generates based on its declaration. All the auto-created Java record classes extend java.lang.Record object and are declared as a final class.
 
