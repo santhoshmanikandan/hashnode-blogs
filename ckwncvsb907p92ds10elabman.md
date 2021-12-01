@@ -57,3 +57,5 @@ public boolean equals(Object o) {
         cis.s.equalsIgnoreCase(s);
 }
 ```
+
+Further Reading: [JEP 394](https://openjdk.java.net/jeps/394)
